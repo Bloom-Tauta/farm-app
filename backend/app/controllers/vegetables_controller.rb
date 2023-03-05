@@ -1,7 +1,8 @@
-class VegeteablesController < ApplicationController
+class VegetablesController < ApplicationController
 
 
     get '/vegetables' do 
-        "Vegetables"
+        vegetables = Vegetable.all
+        vegetables.to_json
     end
 end

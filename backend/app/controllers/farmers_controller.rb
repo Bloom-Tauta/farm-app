@@ -1,7 +1,8 @@
 class FarmersController < ApplicationController
     #Routings
     get '/farmers' do
-        "Farmers"
+        farmers = Farmer.all
+        farmers.to_json
     end
 
 
