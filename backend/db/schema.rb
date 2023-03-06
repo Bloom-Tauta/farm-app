@@ -24,6 +24,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_05_004441) do
   end
 
   create_table "vegetables", force: :cascade do |t|
+    t.string "img_url"
     t.string "name"
     t.string "description"
     t.string "review"

@@ -1,6 +1,7 @@
 class CreateVegetables < ActiveRecord::Migration[7.0]
   def change
     create_table :vegetables do |t|
+      t.string :img_url
       t.string :name
       t.string :description
       t.string :review

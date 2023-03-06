@@ -1,5 +1,5 @@
 import React from 'react'
-// import { Outlet } from 'react-router-dom'
+import { Outlet } from 'react-router-dom'
 import Navbar from './Navbar'
 import Footer from './Footer'
 
@@ -7,8 +7,8 @@ function Layout() {
     return(
         <div>
             <Navbar/> 
-                <div className="container bg-dark text-white">
-                    {/* <Outlet/> */}
+                <div className="container min-vh-100">
+                    <Outlet/>
                 
                 </div>
             <Footer/>

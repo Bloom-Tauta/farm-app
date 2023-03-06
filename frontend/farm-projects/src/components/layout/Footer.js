@@ -2,8 +2,8 @@ import React from 'react'
 
 function Footer() {
     return(
-        <div>
-        Footer
+        <div className="bg-dark text-white p-5 text-center">
+            Footer
         </div>
     )
 }

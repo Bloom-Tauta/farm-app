@@ -14,6 +14,7 @@ class VegetablesController < ApplicationController
 
     #Add Vegetable
     post '/vegetables' do
+        img_url = params[:img_url]
         name = params[:name]
         description = params[:description]
         review = params[:review]
@@ -21,12 +22,12 @@ class VegetablesController < ApplicationController
         farmer_id = params[:farmer_id]
 
     
-        if(name.present? && description.present? && review.present? && farm_id.present? && farmer_id.present?)
+        if(img_url.present? && name.present? && description.present? && review.present? && farm_id.present? && farmer_id.present?)
             check_name_exists = Vegetable.where(name: name).count()
             puts("XXXXXXXXXXXXX", check_name_exists)
                  
             if check_name_exists < 1
-                vegetable = Vegetable.create(name: name, description: description, review: review, farm_id: farm_id, farmer_id: farmer_id)
+                vegetable = Vegetable.create(img_url: img_url, name: name, description: description, review: review, farm_id: farm_id, farmer_id: farmer_id)
                 if vegetable
                     message = {:success => "Vegetable created successfully!"}
                     message.to_json
@@ -52,6 +53,7 @@ class VegetablesController < ApplicationController
     patch '/vegetables/:id' do
         check_vegetable_existence = Vegetable.exists?(id: params[:id])
         if check_vegetable_existence
+            img_url = params[:img_url]
             name = params[:name]
             description = params[:description]
             review = params[:review]
@@ -61,7 +63,7 @@ class VegetablesController < ApplicationController
              if (name.present? && description.present? && review.present? && farm_id.present? && farmer_id.present?)
                 #update
                 vegetable = Vegetable.find_by(id: params[:id])
-                vegetable.update(name: name, description: description, review: review, farm_id: farm_id, farmer_id: farmer_id)
+                vegetable.update(img_url: img_url, name: name, description: description, review: review, farm_id: farm_id, farmer_id: farmer_id)
                 message = {:success => "Vegetable updated successfully!"}
                 message.to_json
              else
