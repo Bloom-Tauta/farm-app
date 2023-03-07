@@ -27,7 +27,7 @@ The React Frontend then interacts with the database via the API.
 
 ### Tips
 Postman was used for testing the endpoints
-Binding.pry wwas used for debugging purposes in Ruby.
+Binding.pry was used for debugging purposes in Ruby.
 
 
 # Click the link to view the Database ERD
