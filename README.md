@@ -5,11 +5,11 @@ It comprises of the back end and the frontend.
 The Backend was coded in  Ruby and Sinatra to store my data.
 On the Frontend I used React which is JavaScript framework to create a good UI/UX.
 
-### Run bundle install on the back end to install dependancies.
-To start the backend server run # bundle exec rake server. THe server will run on port http://localhost:9292
+### Run bundle install in backend directory folder fold to install dependancies.
+To start the backend server cd into backend (cd backend). Then run (bundle exec rake server). THe server will run on port http://localhost:9292
 
-### Run npm install on the Frontend to install dependancies.
-To start the fronted server run npm start. Ther server will run on port http://localhost:3000
+### Run npm install in the farm-projects directory in frontend folder to install dependancies.
+To start the fronted server cd into frontend, then cd into farm-projects, (cd frontend, cd farm-projects). Then run npm start. Ther server will run on port http://localhost:3000
 
 # DELIVERABLES
 This app comprises of the Backend and Frontend.
