@@ -34,7 +34,8 @@ function Home() {
                     </div>
                     
                     <div className="col align-self-center">
-                    Farms
+                    <h1>Farms</h1>
+                    
                     </div>
                 </div>
             </div>

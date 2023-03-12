@@ -10,7 +10,7 @@ function Vegetable({vegetable}) {
                     <p className="card-text">{vegetable.description}</p>
                     <p className="card-text">{vegetable.review}</p>
                     <p className="card-text">Farm_id {vegetable.farm_id}</p>
-                    <a href="#" className="btn btn-primary">Go somewhere</a>
+                    {/* <a href="#" className="btn btn-primary">Go somewhere</a> */}
                 </div>
             </div>
 
